@@ -1,0 +1,40 @@
+{
+  "id": "3059c9db-717d-447f-8b35-954dcff5d297",
+  "name": "greet",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "speech": "Good day!"
+        },
+        {
+          "type": 0,
+          "lang": "en",
+          "speech": "Hello there."
+        },
+        {
+          "type": 0,
+          "lang": "en",
+          "speech": "Greetings."
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "lastUpdate": 1510222652837,
+  "fallbackIntent": false,
+  "events": []
+}

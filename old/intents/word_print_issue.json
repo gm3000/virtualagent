@@ -1,0 +1,29 @@
+{
+  "name": "word_print_issue",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "speech": "Goto \"File\", \"Options\", \"Display\" enable the options \"Print drawings created in work\" and \"Print background colors and images\""
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "lastUpdate": 1510222652837,
+  "fallbackIntent": false,
+  "events": []
+}

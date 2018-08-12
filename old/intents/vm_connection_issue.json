@@ -1,0 +1,73 @@
+{
+  "name": "vm_connection_issue",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "required": true,
+          "dataType": "@sys.any",
+          "name": "vmName",
+          "value": "vmName",
+          "prompts": [
+            {
+              "lang": "en",
+              "value": "What's the name of the virtual machine?"
+            }
+          ],
+          "isList": false
+        },
+        {
+          "required": true,
+          "dataType": "@sys.option",
+          "name": "impact",
+          "value": "$impact",
+          "prompts": [
+            {
+              "lang": "en",
+              "value": "What's the business impact?"
+            }
+          ],
+          "quick_replies": [
+            {
+              "title": "Enterprise",
+              "payload": "enterprise"
+            },
+            {
+              "title": "Site/Dept",
+              "payload": "site_dept"
+            },
+            {
+              "title": "Multiple Users",
+              "payload": "multi_users"
+            },
+            {
+              "title": "User",
+              "payload": "single_user"
+            }
+          ],
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "speech": "It seems that VM server $vmName is down. Need onsite IT engineer to help.\nTicket *SD10024* has been submitted for you.\n\n*Suggested Assignee:* _doe.joe@hpe.com_\nLocation: _Hewlett-Packard-Strasse 1, Bad Homburg_\nPhone: _+49 6172 4563567_\nLanguage: _Germany, English_\n_this engineer had solved 33 similar cases. This engineer has 2 tickets in queue, you may need to wait 1 hour._"
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "lastUpdate": 1510222652837,
+  "fallbackIntent": false,
+  "events": []
+}

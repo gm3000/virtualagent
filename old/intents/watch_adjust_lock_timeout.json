@@ -1,0 +1,30 @@
+{
+  "id": "3059c9db-717d-447f-8b35-954dcff5d297",
+  "name": "watch_adjust_lock_timeout",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "speech": "We are sorry, but the adjustment of the duration of the screen locking is disabled for security reasons."
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "lastUpdate": 1510222652837,
+  "fallbackIntent": false,
+  "events": []
+}

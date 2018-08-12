@@ -1,0 +1,58 @@
+{
+  "id": "3059c9db-717d-447f-8b35-954dcff5d297",
+  "name": "send_email_issue",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "id": "fe10942f-1f9d-41b5-9c18-4c095da368bb",
+          "required": true,
+          "dataType": "@sys.any",
+          "name": "loginName",
+          "value": "$loginName",
+          "prompts": [
+            {
+              "lang": "en",
+              "value": "Please provide your login name."
+            }
+          ],
+          "isList": false
+        },
+        {
+          "id": "b1b7ff5c-50cf-402c-a754-84d474020fff",
+          "required": true,
+          "dataType": "@email",
+          "name": "email",
+          "value": "$email",
+          "prompts": [
+            {
+              "lang": "en",
+              "value": "What's your email address?"
+            }
+          ],
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "speech": "We found your account with login name \"$loginName\" and email address \"$email\". Please adjust the port in your outlook settings to 25 rather than using the default port 465. To do so go to File -> Account Settings -> Account Settings -> Select your Account -> go to more settings"
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "lastUpdate": 1510222652837,
+  "fallbackIntent": false,
+  "events": []
+}

@@ -1,0 +1,40 @@
+{
+  "id": "3059c9db-717d-447f-8b35-954dcff5d297",
+  "name": "thankyou",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "speech": "It's my pleasure. Bye."
+        },
+        {
+          "type": 0,
+          "lang": "en",
+          "speech": "You are welcome. Goodbye."
+        },
+        {
+          "type": 0,
+          "lang": "en",
+          "speech": "Glad to help. See you."
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "lastUpdate": 1510222652837,
+  "fallbackIntent": false,
+  "events": []
+}

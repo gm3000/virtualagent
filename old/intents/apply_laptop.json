@@ -1,0 +1,119 @@
+{
+  "id": "3059c9db-717d-447f-8b35-954dcff5d297",
+  "name": "apply_laptop",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": {
+        "name": "submit_offering_request",
+        "parameters": {
+          "offering_id": "12383",
+          "Description": "$description",
+          "PreferredContactMethod": "$contactMethod",
+          "user_options": [
+            {
+              "name": "SelectPCType_c",
+              "value": "$pcType"
+            }
+          ]
+        }
+      },
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "id": "fe10942f-1f9d-41b5-9c18-4c095da368ka",
+          "required": true,
+          "dataType": "@sys.option",
+          "name": "pcType",
+          "value": "$pcType",
+          "prompts": [
+            {
+              "lang": "en",
+              "value": "Select the PC type."
+            }
+          ],
+          "quick_replies": [
+            {
+              "title": "High performance",
+              "payload": "HighPerformance_c"
+            },
+            {
+              "title": "Travel friendly",
+              "payload": "TravelFriendly_c"
+            }
+          ],
+          "isList": false
+        },
+        {
+          "id": "fe10942f-1f9d-41b5-9c18-4c095da368bb",
+          "required": true,
+          "dataType": "@sys.any",
+          "name": "description",
+          "value": "$description",
+          "prompts": [
+            {
+              "lang": "en",
+              "value": "Please provide business justification."
+            }
+          ],
+          "isList": false
+        },
+        {
+          "id": "b1b7ff5c-50cf-402c-a754-84d474020fff",
+          "required": true,
+          "dataType": "@sys.option",
+          "name": "contactMethod",
+          "value": "$contactMethod",
+          "prompts": [
+            {
+              "lang": "en",
+              "value": "What's your preferred contact method?"
+            }
+          ],
+          "quick_replies": [
+            {
+              "title": "Phone",
+              "payload": "PreferredContactMethodPhone"
+            },
+            {
+              "title": "Email",
+              "payload": "PreferredContactMethodEmail"
+            }
+          ],
+          "isList": false
+        }
+      ],
+      "confirmation": {
+        "enabled": true,
+        "prompt": "You have chosen a $pcType PC and contact with $contactMethod, new order will be placed for you.",
+        "quick_replies": [
+          {
+            "title": "Yes",
+            "payload": "yes"
+          },
+          {
+            "title": "No",
+            "payload": "no"
+          }
+        ]
+      },
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "speech": "New order has been placed."
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "lastUpdate": 1510222652837,
+  "fallbackIntent": false,
+  "events": []
+}
