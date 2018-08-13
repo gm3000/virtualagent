@@ -3,15 +3,15 @@
 module.exports = function(controller) {
 
   // expose history as an endpoint
-  controller.webserver.post('/botkit/history', function(req, res) {
-    if (req.body.user) {
-      getHistoryForUser(req.body.user, 10, function(err, history) {
-        res.json({ success: true, history });
-      });
-    } else {
-      res.json({ success: false, history: [], error: 'no user specified' });
-    }
-  });
+  // controller.webserver.post('/botkit/history', function(req, res) {
+  //   if (req.body.user) {
+  //     getHistoryForUser(req.body.user, 10, function(err, history) {
+  //       res.json({ success: true, history });
+  //     });
+  //   } else {
+  //     res.json({ success: false, history: [], error: 'no user specified' });
+  //   }
+  // });
 
   function logMessage(message, user) {
     if (!user) {
